@@ -17,6 +17,7 @@ Select Choice:
 
 
 class Task:
+
     def __init__(self, title, description, deadline, completed=False):
         self.title = title
         self.description = description
