@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+          background-color: #242f44;
+          color: white;
+          font-family: 'Oswald', sans-serif;
+        }
+
+        h1 {
+          font-size: 36px;
+          padding: 15px;
+          color: #8c6b48;
+          background-color: white;
+        }
+
+
+    </style>
+  </head>
+  <body>
+		<h1>Sign Up</h1>
+        <p style="font-weight: bold;">Create an account:</p>
+        <form action="submission.html" method="GET">
+        <label for="username">Username:</label>
+        <br>
+				<input id="username" name="username" type="text" required minlength="3" maxlength="15" pattern="^[a-zA-Z0-9]+$" >
+        <p style="font-size: small; font-weight: lighter; padding: auto;"><b>NOTE: </b>(No special character allowed)</p>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+       	<input id="pw" name="pw" type="password" required minlength="8" maxlength="15" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]$">
+        <p style="font-size: small; font-weight: lighter; padding: auto;"><b>NOTE: </b>(Password must contain lowercase, uppercase, digit, special character.)</p>
+        <br>
+        <input style="background-color: white; color: #8c6b48; margin: auto;" type="submit" value="Submit">
+      </form>
+  </body>
+</html>
